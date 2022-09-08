@@ -1,0 +1,39 @@
+Open Emotive App
+Connect to headset for connectivity 
+
+cd C:\
+
+cd CyKit-master
+
+cd Py3
+
+C:\Python373x32\Python.exe .\CyKIT.py 127.0.0.1 5151 6 openvibe+generic+nocounter+noheader+nobattery+ovdelay:100+float+ovsamples:004
+
+
+
+
+OpenViBE Acquisition Server, setup.
+* Change 'Driver' to "Generic Raw Telnet Reader"
+* In 'Preferences', ensure that drift correction is disabled,
+otherwise you risk introducing synthetic signal.
+* In 'Driver Properties':
+	* input the correct number of channels (16)
+	* input the correct sampling frequency
+	* change 'Endianness' to "Big endian"
+	* change 'Sample type' to "32 bits float"
+	* change 'Skip footer (bytes)' to "0"
+	* change channel names as required:
+F3	FC5	AF3	F7	T7	P7	O1	O2	P8	T8	F8	AF4	FC6	F4 Reference Reference
+
+
+	* change Sampling Frequency 128 
+Done
+
+
+OpenVibe Designer RUN
+
+Loop through code and files 
+
+
+
+MAKE SURE CORRECT OPENVIBE WITH TIMES 
